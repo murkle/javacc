@@ -241,7 +241,7 @@ public class Options {
 
 		{
 			Object object = optionValues.get(USEROPTION__JAVA_TEMPLATE_TYPE);
-			boolean isLegacy = JAVA_TEMPLATE_TYPE_CLASSIC.equals(object);
+			boolean isLegacy = true;//JAVA_TEMPLATE_TYPE_CLASSIC.equals(object);
 			optionValues.put(NONUSER_OPTION__LEGACY_EXCEPTION_HANDLING, isLegacy );
 		}
 
@@ -421,7 +421,7 @@ public class Options {
 				return;
 			}
 
-			boolean isLegacy = JAVA_TEMPLATE_TYPE_CLASSIC.equals(templateType);
+			boolean isLegacy = true;//JAVA_TEMPLATE_TYPE_CLASSIC.equals(templateType);
 			optionValues.put(NONUSER_OPTION__LEGACY_EXCEPTION_HANDLING, isLegacy);
 		} else
 			
@@ -811,8 +811,8 @@ public class Options {
 	 *         {@link RuntimeException} s (better approach)
 	 */
 	public static boolean isLegacyExceptionHandling() {
-		boolean booleanValue = booleanValue(NONUSER_OPTION__LEGACY_EXCEPTION_HANDLING);
-		return booleanValue;
+		//boolean booleanValue = booleanValue(NONUSER_OPTION__LEGACY_EXCEPTION_HANDLING);
+		return true;//booleanValue;
 	}
 
 	/**
