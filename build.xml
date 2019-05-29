@@ -36,6 +36,8 @@ THE POSSIBILITY OF SUCH DAMAGE.
 	<typedef resource="org/apache/maven/artifact/ant/antlib.xml" uri="antlib:org.apache.maven.artifact.ant" classpathref="maven-ant-tasks.classpath" />
 
 
+	<property name="ant.build.javac.source" value="1.7"/>
+	<property name="ant.build.javac.target" value="1.7"/>
 	<property name="java-src" value="src/main/java" />
 	<property name="test-src" value="src/test/java" />
 	<property name="resources-src" value="src/main/resources" />
